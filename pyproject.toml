@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "podlipki-assistant-bot"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+packages = [{include = "bot"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+django = "^4.2"
+gspread = "^5.8.0"
+gspread-formatting = "^1.1.2"
+pytelegrambotapi = "^4.10.0"
+dramatiq = "^1.14.2"
+postgres = "^4.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

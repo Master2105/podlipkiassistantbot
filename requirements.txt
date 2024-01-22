@@ -1,0 +1,6 @@
+Django
+gspread
+gspread-formatting
+pyTelegramBotAPI
+dramatiq
+postgres
