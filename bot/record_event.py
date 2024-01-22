@@ -328,73 +328,19 @@ def record(message):
 
         sh.sheet1.update(f'A{next_row}:L{next_row}', [[event_data[0], f"{datetime.datetime.now()}", event_data[2], event_data[2], event_data[3], event_data[4], event_data[1], event_data[5], event_data[6], event_data[7], event_data[8], event_data[9]]])
 
-        #Я
         try:
-            bot.send_message(102452736, f"<b>Новое мероприятие</b>\n\n<b>Дата:</b> {event_data[2]}\n<b>Время:</b> {event_data[3]}-{event_data[4]}\n\n<b>Мероприятие:</b> <code>{event_data[1]}</code>\n\n<b>Место:</b> <code>{event_data[7]}</code>\n\n<b>Оборудование:</b> <code>{event_data[8]}</code>\n\n<b>Ответственные:</b> <code>{event_data[9]}</code>", parse_mode='html')
+            bot.send_message(id, f"<b>Новое мероприятие</b>\n\n<b>Дата:</b> {event_data[2]}\n<b>Время:</b> {event_data[3]}-{event_data[4]}\n\n<b>Мероприятие:</b> <code>{event_data[1]}</code>\n\n<b>Место:</b> <code>{event_data[7]}</code>\n\n<b>Оборудование:</b> <code>{event_data[8]}</code>\n\n<b>Ответственные:</b> <code>{event_data[9]}</code>", parse_mode='html')
         except Exception as e:
             print(e)
-            print("Невозможно отправить сообщение юзеру 102452736")
-            bot.send_message(102452736, f"Не удалось сформировать для Вас подтверждение записи", parse_mode='html')
-
-        # # #Юлия Валерьевна
-        # try:
-        #     bot.send_message(5872921373, f"<b>Новое мероприятие</b>\n\n<b>Дата:</b> {event_data[2]}\n<b>Время:</b> {event_data[3]}-{event_data[4]}\n\n<b>Мероприятие:</b> {event_data[1]}\n\n<b>Место:</b> {event_data[7]}\n\n<b>Оборудование:</b> {event_data[8]}\n\n<b>Ответственные:</b> {event_data[9]}", parse_mode='html')
-        # except Exception as e:
-        #     print(e)
-        #     print("Невозможно отправить сообщение юзеру 5872921373")
-        #     bot.send_message(102452736, f"Невозможно отправить сообщение Юлии Валерьевне Кочетковой, 5872921373", parse_mode='html')
-
-
-        # # #Людмила Владимировна
-        # try:
-        #     bot.send_message(446760871, f"<b>Новое мероприятие</b>\n\n<b>Дата:</b> {event_data[2]}\n<b>Время:</b> {event_data[3]}-{event_data[4]}\n\n<b>Мероприятие:</b> {event_data[1]}\n\n<b>Место:</b> {event_data[7]}\n\n<b>Оборудование:</b> {event_data[8]}\n\n<b>Ответственные:</b> {event_data[9]}", parse_mode='html')
-        # except Exception as e:
-        #     print(e)
-        #     print("Невозможно отправить сообщение юзеру 446760871")
-        #     bot.send_message(102452736, f"Невозможно отправить сообщение Людмиле Владимировне Коневой, 446760871", parse_mode='html')
-
-
-        # # #Ольга Борисовна
-        # try:
-        #     bot.send_message(438166996, f"<b>Новое мероприятие</b>\n\n<b>Дата:</b> {event_data[2]}\n<b>Время:</b> {event_data[3]}-{event_data[4]}\n\n<b>Мероприятие:</b> {event_data[1]}\n\n<b>Место:</b> {event_data[7]}\n\n<b>Оборудование:</b> {event_data[8]}\n\n<b>Ответственные:</b> {event_data[9]}", parse_mode='html')
-        # except Exception as e:
-        #     print(e)
-        #     print("Невозможно отправить сообщение юзеру 438166996")
-        #     bot.send_message(102452736, f"Невозможно отправить сообщение Ольге Борисовне Майоровой, 438166996", parse_mode='html')
-
-
-        # # #Ольга Николаевна
-        # try:
-        #     bot.send_message(373266581, f"<b>Новое мероприятие</b>\n\n<b>Дата:</b> {event_data[2]}\n<b>Время:</b> {event_data[3]}-{event_data[4]}\n\n<b>Мероприятие:</b> {event_data[1]}\n\n<b>Место:</b> {event_data[7]}\n\n<b>Оборудование:</b> {event_data[8]}\n\n<b>Ответственные:</b> {event_data[9]}", parse_mode='html')
-        # except Exception as e:
-        #     print(e)
-        #     print("Невозможно отправить сообщение юзеру 373266581")
-        #     bot.send_message(102452736, f"Невозможно отправить сообщение Ольге Николаевне Филатовой, 373266581", parse_mode='html')
-
-
-        # # #Оксана Ивановна
-        # try:
-        #     bot.send_message(179580474, f"<b>Новое мероприятие</b>\n\n<b>Дата:</b> {event_data[2]}\n<b>Время:</b> {event_data[3]}-{event_data[4]}\n\n<b>Мероприятие:</b> {event_data[1]}\n\n<b>Место:</b> {event_data[7]}\n\n<b>Оборудование:</b> {event_data[8]}\n\n<b>Ответственные:</b> {event_data[9]}", parse_mode='html')
-        # except Exception as e:
-        #     print(e)
-        #     print("Невозможно отправить сообщение юзеру 179580474")
-        #     bot.send_message(102452736, f"Невозможно отправить сообщение Оксане Ивановне Пономарёвой, 179580474", parse_mode='html')
-            
-            
-        # # #Оксана Васильевна
-        # try:
-        #     bot.send_message(1259962123, f"<b>Новое мероприятие</b>\n\n<b>Дата:</b> {event_data[2]}\n<b>Время:</b> {event_data[3]}-{event_data[4]}\n\n<b>Мероприятие:</b> {event_data[1]}\n\n<b>Место:</b> {event_data[7]}\n\n<b>Оборудование:</b> {event_data[8]}\n\n<b>Ответственные:</b> {event_data[9]}", parse_mode='html')
-        # except Exception as e:
-        #     print(e)
-        #     print("Невозможно отправить сообщение юзеру 1259962123")
-        #     bot.send_message(102452736, f"Невозможно отправить сообщение Оксане Васильевне Федяковой, 1259962123", parse_mode='html')
+            print("Невозможно отправить сообщение юзеру id")
+            bot.send_message(id, f"Не удалось сформировать для Вас подтверждение записи", parse_mode='html')
 
 
     except Exception as e:
         print(e)
         print(f"При записи мероприятия {event_data[1]} в таблицу возникла ошибка {e}")
         bot.send_message(message.chat.id, f"<b>Возникла непредвиденная ошибка. Информация уже передана разработчикам. Скоро всё поправят</b>", parse_mode='html')
-        bot.send_message(102452736, f"При записи мероприятия {event_data[1]} в таблицу возникла ошибка {e}", parse_mode='html')
+        bot.send_message(id, f"При записи мероприятия {event_data[1]} в таблицу возникла ошибка {e}", parse_mode='html')
 
 
     event_data.clear()
