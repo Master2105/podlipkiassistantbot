@@ -43,7 +43,7 @@ def plan_redactor(message):
     print("plan_redactor")
     if message.text.lower() == "посмотреть план":
         markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
-        open_plan = types.InlineKeyboardButton('Посмотреть план', url='https://docs.google.com/spreadsheets/d/1YTe--155Ot12nkgOenhipqGiltcpwU8eQEsPKI8xwQI/edit?usp=sharing')
+        open_plan = types.InlineKeyboardButton('Посмотреть план', url='')
         keyboard = types.InlineKeyboardMarkup()
         keyboard.add(open_plan)
         bot.send_message(message.chat.id, "В данный момент план доступен для просмотра в виде таблицы по ссылке", parse_mode='html', reply_markup=keyboard)
@@ -97,7 +97,7 @@ def confirmation(message):
             get_calendar(message)
     elif message.text.lower() == "ознакомиться":
         markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
-        open_plan = types.InlineKeyboardButton('Посмотреть план', url='https://docs.google.com/spreadsheets/d/1YTe--155Ot12nkgOenhipqGiltcpwU8eQEsPKI8xwQI/edit?usp=sharing')
+        open_plan = types.InlineKeyboardButton('Посмотреть план', url='')
         keyboard = types.InlineKeyboardMarkup()
         keyboard.add(open_plan)
         bot.send_message(message.chat.id, "В данный момент план доступен для просмотра в виде таблицы по ссылке", parse_mode='html', reply_markup=keyboard)
