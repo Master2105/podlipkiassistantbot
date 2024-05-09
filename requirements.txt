@@ -1,6 +1,15 @@
-Django
-gspread
-gspread-formatting
-pyTelegramBotAPI
-dramatiq
-postgres
+pyTelegramBotAPI>=4.17.0
+Django>=4.2
+gspread>=5.8.0
+gspread-formatting>=1.1.2
+pyTelegramBotAPI>=4.10.0
+dramatiq>=1.14.2
+postgres>=4.0
+redis>=5.0.3
+pandas>=2.2.1
+openpyxl>=3.1.2
+docx
+docxtpl
+progress
+# git+https://github.com/Master2105/My-Telebot-Calendar.git
+# git+https://github.com/Master2105/my-inline-timepicker-new.git
